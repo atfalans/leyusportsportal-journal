@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>九游简明指南 · 知识库入口</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8f5f0;
+      font-family: 'Georgia', 'Times New Roman', 'Songti SC', serif;
+      color: #3b3a36;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .page-wrap {
+      background: #fdfcf9;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      padding: 2.8rem 2.2rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border-left: 6px solid #c7af8b;
+      padding-left: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: #2f2d29;
+    }
+
+    .subhead {
+      font-size: 1.05rem;
+      color: #7b756c;
+      margin-bottom: 2rem;
+      border-bottom: 1px dashed #ddd6cb;
+      padding-bottom: 1rem;
+    }
+
+    .hero-box {
+      background: #f4efe8;
+      border-radius: 14px;
+      padding: 1.8rem 2rem;
+      margin: 1.8rem 0 2.5rem 0;
+      border-left: 4px solid #b8a184;
+    }
+
+    .hero-box p {
+      font-size: 1.1rem;
+      color: #3d3933;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin: 2.2rem 0 1rem 0;
+      color: #4c463e;
+      border-bottom: 2px solid #e3dbcf;
+      padding-bottom: 0.3rem;
+      display: inline-block;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin: 1.4rem 0 2rem 0;
+    }
+
+    .card {
+      background: #faf7f2;
+      border: 1px solid #e5ddd2;
+      border-radius: 12px;
+      padding: 1.2rem 1.2rem 1rem 1.2rem;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: #4d453c;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #5b554b;
+    }
+
+    .quote-block {
+      background: #f2ece3;
+      border-left: 6px solid #cbb7a0;
+      padding: 1.2rem 1.6rem;
+      margin: 1.8rem 0;
+      border-radius: 0 10px 10px 0;
+      font-style: italic;
+      color: #4f4940;
+    }
+
+    .tip-box {
+      background: #f1ede6;
+      border: 1px solid #dcd3c6;
+      border-radius: 12px;
+      padding: 1rem 1.4rem;
+      margin: 1.5rem 0;
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+    }
+
+    .tip-icon {
+      font-size: 1.4rem;
+      line-height: 1;
+      color: #a58c71;
+    }
+
+    .tip-content {
+      flex: 1;
+    }
+
+    .tip-content strong {
+      color: #584f43;
+    }
+
+    .faq-summary {
+      background: #f9f5ee;
+      padding: 1.6rem 1.8rem;
+      border-radius: 14px;
+      margin: 2rem 0 1.2rem 0;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      color: #4c453b;
+    }
+
+    .faq-a {
+      margin-top: 0.2rem;
+      color: #5f584e;
+      padding-left: 0.8rem;
+      border-left: 3px solid #d6cbbc;
+    }
+
+    .related-links {
+      margin-top: 2.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e0d7cb;
+    }
+
+    .related-links p {
+      margin-bottom: 0.4rem;
+    }
+
+    .inline-link {
+      color: #6f624f;
+      text-decoration: none;
+      border-bottom: 1px dotted #b8a78c;
+      transition: border 0.15s;
+    }
+
+    .inline-link:hover {
+      border-bottom: 1px solid #6f624f;
+    }
+
+    .footer-note {
+      margin-top: 2.8rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #9a9287;
+      border-top: 1px solid #e4dbcf;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .page-wrap {
+        padding: 1.8rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.7rem;
+        padding-left: 0.8rem;
+      }
+      .hero-box {
+        padding: 1.2rem 1.2rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <h1>九游 · 简明知识库</h1>
+    <div class="subhead">一份偏重指南与访问提醒的轻量入口页</div>
+
+    <!-- hero 区 -->
+    <div class="hero-box">
+      <p>如果你正寻找一个整合了九游相关资讯、功能索引与使用备忘的起点，这里尝试以克制的叙述梳理几条线索。谈不上完整，但足够帮你避开一些常见的磕绊。</p>
+    </div>
+
+    <!-- 特点 / 场景卡片 -->
+    <div class="section-title">几个常被问起的侧面</div>
+    <div class="card-grid">
+      <div class="card">
+        <h3>界面与导航</h3>
+        <p>主面板分为内容流与侧栏目录，部分入口藏在二级菜单里。第一次打开时，建议先扫一遍侧栏标签。</p>
+      </div>
+      <div class="card">
+        <h3>内容组织方式</h3>
+        <p>专辑、歌单与推荐按场景归类，但自定义序列需要手动拖拽排序，这个操作不太显眼。</p>
+      </div>
+      <div class="card">
+        <h3>分享与协作</h3>
+        <p>生成的分享链接有效期为 72 小时，如果你打算和朋友共建一个列表，记得在有效期截止前导出备份。</p>
+      </div>
+      <div class="card">
+        <h3>搜索技巧</h3>
+        <p>搜索栏支持关键词与部分标签混合查询，但暂不支持正则或高级筛选。多试几个近义词效果更好。</p>
+      </div>
+    </div>
+
+    <!-- 引用块：提醒性质的摘录 -->
+    <div class="quote-block">
+      “很多功能其实就在那里，只是默认折叠了。花五分钟浏览一遍设置页，往往能省下后面几小时的摸索。”
+    </div>
+
+    <!-- 提示区 -->
+    <div class="section-title">访问与使用提醒</div>
+    <div class="tip-box">
+      <span class="tip-icon">📌</span>
+      <div class="tip-content">
+        <strong>网络环境：</strong>部分资源加载依赖特定 CDN，如果你遇到页面样式丢失或部分内容不刷新，可以尝试切换网络或清除浏览器缓存（特别是 Service Worker 缓存）。
+      </div>
+    </div>
+    <div class="tip-box">
+      <span class="tip-icon">📌</span>
+      <div class="tip-content">
+        <strong>账号关联：</strong>如果你使用第三方账号登录，建议尽早绑定邮箱，否则在重置密码或换设备时可能会遇到障碍。
+      </div>
+    </div>
+    <div class="tip-box">
+      <span class="tip-icon">📌</span>
+      <div class="tip-content">
+        <strong>数据导出：</strong>目前支持 JSON 与 CSV 两种格式导出个人列表，但导出的文件不包含评论与点赞记录。定期备份是个好习惯。
+      </div>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section-title">FAQ 摘要</div>
+    <div class="faq-summary">
+      <div class="faq-item">
+        <div class="faq-q">Q: 为什么我创建的歌单无法公开可见？</div>
+        <div class="faq-a">检查一下歌单设置里的“可见性”选项，默认可能是“仅自己”。切换到“公开”后大约有 5 分钟同步延迟。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q: 移动端布局和桌面端差异大吗？</div>
+        <div class="faq-a">核心功能一致，但移动端把一些侧栏元素收进了底部导航栏。编辑排序时建议切换到桌面视图会更顺手。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Q: 有没有官方 API 或开放接口？</div>
+        <div class="faq-a">目前没有公开的 REST API，但可以通过某些社区维护的工具间接获取列表元数据，稳定性与合规性需要自行评估。</div>
+      </div>
+    </div>
+
+    <!-- 相关信息区 + 链接 -->
+    <div class="related-links">
+      <p><span style="color:#7b7166;">如果你需要直接访问服务本身，这里有一个指向主站的链接：</span></p>
+      <p style="margin-top:0.8rem; font-size:1.1rem;">
+        <a href="https://playlist-9game.com" class="inline-link">九游</a>
+        <span style="color:#9a9287; margin-left:0.5rem;">—— 你可以把它当作一个常驻书签。</span>
+      </p>
+      <p style="margin-top:1rem; color:#7b7166; font-size:0.95rem;">
+        另外，本站知识库内容仅作参考，具体功能以实际页面为准。如有变动，建议以最新版本为准。
+      </p>
+    </div>
+
+    <div class="footer-note">
+      <span>最后整理于近期 · 知识库入口式页面</span>
+    </div>
+  </div>
+</body>
+</html>
